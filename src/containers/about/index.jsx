@@ -8,15 +8,15 @@ import {FaDev,FaDatabase} from'react-icons/fa';
 const personalDetails=[
   {
     label:"Name",
-    value:"Sachin kumar",
+    value:"Sachin Kumar",
   },
   {
     label:"Age:",
-    value:"24"
+    value:"25"
   },
   {
-    label:"Address:",
-    value:"India"
+    label: "Address",
+    value: "Bengaluru, India",
   },
   {
     label:"Email:",
@@ -28,7 +28,8 @@ const personalDetails=[
   }
 ];
 
-const jobSummary = "Adaptable .NET Full Stack Developer with six months of experience in building high-performance applications using .NET and Angular. Skilled in backend and frontend integration, focused on delivering efficient, user-friendly solutions, and committed to learning and enhancing technical and UI development skills.";
+const jobSummary = 
+"Full Stack Developer with hands-on experience in building scalable web and mobile applications using Angular, React, .NET Core, ADO.NET, SQL Server, and PostgreSQL. Skilled in developing responsive UIs, designing RESTful APIs, implementing microservices, and integrating third-party services. Strong understanding of both front-end and back-end architecture with expertise in Angular 18, TypeScript, JavaScript, HTML, CSS/SCSS, and mobile development using Capacitor and Cordova. Experienced in document management systems, statement configuration modules, authentication flows, and performance optimization. Adept at collaborating with stakeholders, analyzing requirements, and delivering high-quality, user-focused solutions across web and mobile platforms.";
 
 
 const About = () => {
@@ -44,7 +45,7 @@ const About = () => {
             start={{transform:"translateX(-900px"}}
             end={{transform:"translateY(0px"}}
             >
-          <h3>.Net Full Stack Developer with Angular</h3>
+          <h3>Full Stack Developer</h3>
           <p>{jobSummary}</p>
           </Animate>
           <Animate

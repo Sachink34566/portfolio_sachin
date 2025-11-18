@@ -1,7 +1,7 @@
 .portfolio {
     .portfolio_content {
         padding: 20px;
-        width: 100%;
+        width: 95%;
 
         .portfolio_content_filter {
             display: flex;
@@ -31,60 +31,74 @@
         }
 
         .portfolio_content_cards {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1rem;
-            margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 10px;
 
-            .portfolio_content_cards_item {
-                height: 366px;
-                cursor: pointer;
-                position: relative;
+  .portfolio_content_cards_item {
+    height: 366px;
+    cursor: pointer;
+    position: relative;
 
-                .portfolio_content_cards_item_imag {
-                    height: 100%;
+    .portfolio_content_cards_item_imag {
+      height: 100%;
 
-                    a {
-                        height: 100%;
+      a {
+        display: block;
+        height: 100%;
 
-                        img {
-                            height: inherit;
-                            object-fit: cover;
-                            width: 100%;
-                        }
-                    }
-                }
-            }
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
         }
+      }
     }
+  }
+}
+    
 
-    @media screen and (max-width: 768px) {
-        .portfolio_content_cards {
-            grid-template-columns: 1fr;
-        }
+@media screen and (max-width: 1024px) {
+  .portfolio_content_cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
-        .portfolio_content_cards_item {
-            height: auto;
-        }
+@media screen and (max-width: 768px) {
+  .portfolio_content_cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .portfolio_content_cards_item {
+    height: auto; 
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .portfolio_content_cards {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio_content_cards_item {
+    height: auto; 
+    margin-bottom: 10px;
+  }
+
+  .portfolio_content_cards_item_imag a img {
+    height: auto; 
+  }
+
+  .portfolio_content_filter {
+    flex-direction: column;
+    padding: 5px;
+
+    li {
+      margin-bottom: 5px;
+      padding: 10px;
     }
-
-    @media screen and (max-width: 480px) {
-        .portfolio_content_cards {
-            grid-template-columns: 1fr;
-        }
-
-        .portfolio_content_filter {
-            flex-direction: column;
-            padding: 5px;
-
-            li {
-                margin-bottom: 5px;
-                padding: 10px;
-            }
-        }
-
-        .portfolio_content_cards_item {
-            margin-bottom: 10px;
-        }
+  }
+}
     }
 }

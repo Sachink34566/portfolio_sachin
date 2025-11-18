@@ -1,8 +1,8 @@
 :root {
-    --yellow-theme-background-color:#1d1d1d;
+    --yellow-theme-background-color:#414EC7 !important;
     --yellow-theme-main-color: #ffdd40;
     --yellow-theme-sub-text-color:#ffffff;
-    --yellow-theme-nav-background-color:#181818;
+    --yellow-theme-nav-background-color:#414EC7 !important;
 }
 .{
     box-sizing: border-box;

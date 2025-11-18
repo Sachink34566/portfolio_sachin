@@ -9,17 +9,32 @@ import ImageFive from '../../imges/image5.png';
 import "./styles.css";
 
 const portfolioData = [
-  { id: 2, name: "Ecommerce", category: "Development", image: ImageOne },
-  { id: 3, name: "Notes App", category: "Development", image: ImageTwo },
-  { id: 4, name: "Supplier Design", category: "Design", image: ImageThree },
-  { id: 5, name: "Ecommerce", category: "Design", image: ImageFour },
-  { id: 6, name: "Ecommerce", category: "Development", image: ImageFive },
+  {
+    id: 1,
+    name: "E-Commerce Project",
+    category: "Development",
+    image: ImageOne,
+    link: "https://github.com/Sachink34566/Blinkit" // Replace with actual URL
+  },
+  {
+    id: 2,
+    name: "Portfolio Website",
+    category: "Development",
+    image: ImageTwo,
+    link: "https://github.com/Sachink34566/portfolio_sachin" // Replace with actual URL
+  },
+  {
+    id: 3,
+    name: "CRUD Operation App",
+    category: "Development",
+    image: ImageThree,
+    link: "https://github.com/Sachink34566/Curd_Operation_WebApi" // Replace with actual URL
+  }
 ];
-
 const filterData = [
   { filterId: 1, label: "All" },
   { filterId: 2, label: "Development" },
-  { filterId: 3, label: "Design" },
+  // { filterId: 3, label: "Design" },
 ];
 
 const Portfolio = () => {
@@ -55,9 +70,9 @@ const Portfolio = () => {
           {filteredPortfolioData.map(item => (
             <div className="portfolio_content_cards_item" key={item.id}>
               <div className="portfolio_content_cards_item_imag">
-                <a href="#">
-                  <img src={item.image} alt={item.name} />
-                </a>
+               <a href={item.link || "#"} target="_blank" rel="noopener noreferrer">
+  <img src={item.image} alt={item.name} />
+</a>
               </div>
             </div>
           ))}

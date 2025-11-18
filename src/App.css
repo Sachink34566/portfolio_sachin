@@ -5,3 +5,11 @@
 .App .app_Dr {
   height: calc(100% - 80px);
 }
+#tsparticles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Lower value keeps it below the Navbar */
+}
